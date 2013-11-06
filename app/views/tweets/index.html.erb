@@ -1,5 +1,10 @@
 <h2>Single User Twitter</h2>
 
+<%= form_for @tweet do |f| %>
+  <%= f.text_field :content %>
+  <%= f.submit %>
+<% end %>
+
 <% @tweets.each do |tweet| %>
   <p>
     <%= tweet.content %>
