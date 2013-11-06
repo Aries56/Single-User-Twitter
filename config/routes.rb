@@ -1,6 +1,6 @@
 Twitter::Application.routes.draw do
 
-  root :to => 'tweets#index'
+  root :to => 'tweets#index', :via => :get
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

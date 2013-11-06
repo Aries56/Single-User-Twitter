@@ -1,1 +1,7 @@
-<h2>Tweet Index</h2>
+<h2>Single User Twitter</h2>
+
+<% @tweets.each do |tweet| %>
+  <p>
+    <%= tweet.content %>
+  </p>
+<% end %>
